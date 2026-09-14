@@ -1,0 +1,1 @@
+## Se añadirán acá notas de aprendizaje semanales.

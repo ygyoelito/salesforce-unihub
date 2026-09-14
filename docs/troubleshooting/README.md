@@ -1,0 +1,1 @@
+## Utilizaremos este archivo para dejar constancia de errores presentados y formas de resolverlos.

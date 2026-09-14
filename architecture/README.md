@@ -1,0 +1,1 @@
+## Documentación de la arquitectura técnica de UniHub, incluyendo componentes, relaciones y decisiones estructurales.

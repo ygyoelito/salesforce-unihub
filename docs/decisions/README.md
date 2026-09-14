@@ -1,0 +1,1 @@
+## Declararemos aquí registros de decisiones técnicas importantes (tipo ADR: Architecture Decision Record)

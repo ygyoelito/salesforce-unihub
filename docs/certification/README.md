@@ -1,0 +1,1 @@
+## Notas y experiencias acumuladas en vista a la preparación para la certificación de Platform Developer.

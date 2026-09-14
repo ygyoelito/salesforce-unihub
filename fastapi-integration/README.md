@@ -1,0 +1,1 @@
+## Documentación sobre componente de integración Salesforce ↔ FastAPI
