@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>University_Address_Required</fullName>
+    <active>true</active>
+    <description>
+        Requires the university street, city, state/province, and country.
+    </description>
+    <errorConditionFormula>
+        OR(
+            ISBLANK(Address__Street__s),
+            ISBLANK(Address__City__s),
+            ISBLANK(TEXT(Address__StateCode__s)),
+            ISBLANK(TEXT(Address__CountryCode__s))
+        )
+    </errorConditionFormula>
+    <errorMessage>
+        Street, City, State/Province, and Country are required.
+    </errorMessage>
+</ValidationRule>
