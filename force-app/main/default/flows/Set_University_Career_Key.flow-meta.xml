@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <assignments>
+        <name>Set_University_Career_Key</name>
+        <label>Set University Career Key</label>
+        <locationX>50</locationX>
+        <locationY>100</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.UniversityCareerKey__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>UniversityCareerKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Sets the unique key for a university career from its University and Career.</description>
+    <formulas>
+        <name>UniversityCareerKey</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.University__c} &amp; &quot;|&quot; &amp; {!$Record.Career__c}</expression>    
+    </formulas>
+    <label>Set University Career Key</label>
+    <processType>AutoLaunchedFlow</processType>    
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_University_Career_Key</targetReference>
+        </connector>
+        <object>UniversityCareer__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
