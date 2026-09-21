@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UniversityCareer__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>University Career</label>
+    <referenceTo>UniversityCareer__c</referenceTo>
+    <relationshipLabel>Students</relationshipLabel>
+    <relationshipName>Students</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

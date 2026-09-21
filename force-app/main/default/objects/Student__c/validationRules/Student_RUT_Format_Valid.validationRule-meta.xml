@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_RUT_Format_Valid</fullName>
+    <active>true</active>
+    <description>
+        Validates the format of the student's RUT.
+    </description>
+    <errorConditionFormula>
+        NOT(
+            REGEX(RUT__c, "^[0-9]{8}-[0-9K]$")
+        )
+    </errorConditionFormula>
+    <errorMessage>
+        Please enter a valid RUT format (e.g., 12345678-9 or 12345678-K).
+    </errorMessage>
+</ValidationRule>
