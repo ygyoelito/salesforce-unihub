@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <pluralLabel>Courses</pluralLabel>
+    <fullName>Course__c</fullName>
+    <description>It represents a generic course managed by UniHub.</description>
+    <nameField>
+        <label>Course Name</label>
+        <type>Text</type>
+    </nameField>
+    <enableBulkApi>true</enableBulkApi>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <enableHistory>false</enableHistory>
+    <enableActivities>false</enableActivities>
+    <enableSearch>true</enableSearch>
+    <enableFeeds>false</enableFeeds>
+    <enableReports>true</enableReports>
+    <sharingModel>ReadWrite</sharingModel>
+    <label>Course</label>
+    <deploymentStatus>InDevelopment</deploymentStatus>
+</CustomObject>
