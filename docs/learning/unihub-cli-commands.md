@@ -306,6 +306,56 @@ sf code-analyzer rules
 sf doctor
 ```
 
+## Salesforce CLI — Obtener metadata desde Salesforce hacia el proyecto local en VS Code
+
+### Listar los metadatos de forma general
+
+```powershell
+sf org list metadata `
+  --metadata-type Layout `
+  --target-org siloe
+```
+
+### Sin indicar metadata
+
+```powershell
+sf project retrieve start --target-org siloe
+```
+
+### Traer un Layout concreto
+
+```powershell
+sf project retrieve start `
+  --metadata "Layout:University__c-University Layout" `
+  --target-org siloe
+```
+
+### Traer un Permission Set
+
+```powershell
+sf project retrieve start `
+  --metadata "PermissionSet:UniHub_Developer" `
+  --target-org siloe
+```
+
+### Traer un objeto completo
+
+```powershell
+sf project retrieve start `
+  --metadata "CustomObject:Student__c" `
+  --target-org siloe
+```
+
+### Traer varios componentes a la vez
+
+```powershell
+sf project retrieve start `
+  --metadata "CustomObject:Student__c" `
+  --metadata "PermissionSet:UniHub_Developer" `
+  --metadata "Layout:Student__c-Student Layout" `
+  --target-org siloe
+```
+
 ## npm
 
 ```powershell
